@@ -169,7 +169,7 @@ getUserById('16t', users, function(user){
 var numbers  = [1, 2, 3, 4, 5, 6];
 var find = function(arr, cb) {
   for(var i = 0; i < arr.length; i++){
-    cb(num);
+    cb(arr[i]);
   }
 };
 find(numbers, function(num){

@@ -4,7 +4,7 @@ var threeItems = [1,2,3];
 //FINISHED
 //code here
 var last = function(arr){
-  alert arr.length;
+  alert(arr.length);
 
 };
 last(threeItems);
@@ -92,7 +92,7 @@ longest(sentence);
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
-//STILL NEED TO FINISH!
+//FINISHED!
 //write a function called capitalize that takes in the myPoem variable and capitalizes every word 
 var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
@@ -101,9 +101,10 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 var capitalize = function(str){
   var newArray = str.split(" ");
   for(var i = 0; i < newArray.length; i++){
-    newArray[i].charAt(0).toUpperCase();
+    newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray[i].substr(1);
   }
-  console.log(newArray);
+  var newString = newArray.join(" ");
+  return newString;
 };
 capitalize(myPoem);
 
