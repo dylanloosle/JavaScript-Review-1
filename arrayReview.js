@@ -103,7 +103,7 @@ var capitalize = function(str){
   for(var i = 0; i < newArray.length; i++){
     newArray[i].charAt(0).toUpperCase();
   }
-  console.log(myArray);
+  console.log(newArray);
 };
 capitalize(myPoem);
 
