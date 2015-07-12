@@ -1,7 +1,7 @@
 /* Make sure you do these last */
 
 /*
-
+//FINISHED
 Write a function that takes an array of integers and returns the sum of the integers after adding 1 to each.
 var plusOneSum = function(arr){
   var total = 0;
@@ -19,7 +19,7 @@ plusOneSum([1, 2, 3, 4]); // 14
 
 
 /*
-
+//FINISHED
 Write a function that accepts a multi dimensional array and returns a flattened version.
  var flatten = function(arr) {
  return arr.reduce(function (flat, toFlatten) {
@@ -54,7 +54,21 @@ There is an array of non-negative integers. A second array is formed by shufflin
 /*
 
 Write a function that returns the longest word(s) from a sentence. The function should not return any duplicate words (case-insensitive).
+var string = "I gave a present to my parents";
 
+ var longest = function(str){
+ var string = str.split(" ");
+ var longest = 0;
+ var word = [];
+ for(var i = 0; i < string.length; i++){
+ if(longest < string[i].length){
+ longest = string[i].length;
+ word = [string[i]];
+ }
+ }
+ return word;
+ };
+ longest(string);
 Example
 
 longestWords("You are just an old antidisestablishmentarian") // ["antidisestablishmentarian"]
