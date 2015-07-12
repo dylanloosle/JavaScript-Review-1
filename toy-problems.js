@@ -3,6 +3,14 @@
 /*
 
 Write a function that takes an array of integers and returns the sum of the integers after adding 1 to each.
+var plusOneSum = function(arr){
+  var total = 0;
+  for(var i in arr){
+  total += arr[i] + 1;
+  }
+  return total;
+};
+
 
 plusOneSum([1, 2, 3, 4]); // 14
 
@@ -13,6 +21,12 @@ plusOneSum([1, 2, 3, 4]); // 14
 /*
 
 Write a function that accepts a multi dimensional array and returns a flattened version.
+ var flatten = function(arr) {
+ return arr.reduce(function (flat, toFlatten) {
+ return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+ }, []);
+ }
+
 
 flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
